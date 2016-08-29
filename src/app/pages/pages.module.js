@@ -16,6 +16,22 @@
     'BlurAdmin.pages.charts',
     'BlurAdmin.pages.maps',
     'BlurAdmin.pages.profile',
+
+
+
+    // Import viewProfile module
+    'BlurAdmin.pages.userProfile',
+
+
+
+
+
+
+
+
+
+
+
   ])
       .config(routeConfig);
 
