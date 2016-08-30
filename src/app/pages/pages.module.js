@@ -22,15 +22,8 @@
     // Import viewProfile module
     'BlurAdmin.pages.userProfile',
 
-
-
-
-
-
-
-
-
-
+    // Import newsArticle module
+    //'BlurAdmin.pages.newsArticle',
 
   ])
       .config(routeConfig);
