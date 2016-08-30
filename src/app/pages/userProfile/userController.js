@@ -8,6 +8,25 @@
   function userCtrl($scope,$stateParams) {
 
     $scope.id = $stateParams.userID; 
+
+
+
+    $scope.user = {	"firstName":"John", 
+    				"lastName":"Doe",
+    				"contact" : 71629232}
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
 
 })();
