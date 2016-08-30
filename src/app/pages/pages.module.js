@@ -17,6 +17,7 @@
     'BlurAdmin.pages.maps',
     'BlurAdmin.pages.profile',
 
+<<<<<<< HEAD
 
 
     // Import viewProfile module
@@ -25,6 +26,10 @@
     // Import newsArticle module
     //'BlurAdmin.pages.newsArticle',
 
+=======
+    // new module added here 
+    'BlurAdmin.pages.new',
+>>>>>>> 7e2228c45a29a84770e54750b830ad3a01c484e6
   ])
       .config(routeConfig);
 
