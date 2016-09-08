@@ -40,7 +40,8 @@ function browserSyncInit(baseDir, browser) {
     server: server,
     browser: browser,
     ghostMode: false,
-    port: process.env.PORT,
+    port: process.env.PORT || 5000,
+    host: process.env.YOUR_HOST || '0.0.0.0'
 
   });
 }
