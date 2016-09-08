@@ -43,6 +43,6 @@
     "wrench": "~1.5.8"
   },
   "scripts": {
-    "postinstall": "npm install -g bower"
+    "postinstall": "npm install -g bower && bower install"
   }
 }
