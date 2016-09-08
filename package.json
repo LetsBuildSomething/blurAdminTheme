@@ -43,6 +43,6 @@
     "wrench": "~1.5.8"
   },
   "scripts": {
-    "postinstall": "npm install -g bower && bower install && npm install -g gulp && gulp default"
+    "postinstall": "npm install -g bower && bower install && npm install gulp && gulp install"
   }
 }
