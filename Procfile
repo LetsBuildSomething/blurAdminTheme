@@ -1,1 +1,1 @@
-web: npm install wrench && node node_modules/gulp/bin/gulp serve:dist
+web: node node_modules/gulp/bin/gulp serve:dist
