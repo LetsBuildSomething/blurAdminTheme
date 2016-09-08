@@ -1,5 +1,76 @@
-<h1> VIEW ALL USERS <h1>
-<h3> from the scope : {{name}} <h3>
+<div class="widgets">
+    <div class="row">
+        <div class="col-md-12">
+            <!--Todo try to get $PageTitle from a routing sources-->
+            <div ba-panel ba-panel-title="All Users" ba-panel-class="with-scroll">
 
+                <div class="horizontal-scroll">
+                    <div class="form-group select-page-size-wrap ">
+                        <label>Rows on page
+                            <select class="form-control selectpicker show-tick" title="Rows on page"
+                                    selectpicker
+                                    ng-model="tablePageSize"
+                                    ng-options="i for i in [5,10,15,20,25]">
+                            </select>
+                        </label>
+                    </div>
+                    <table class="table" st-table="allUsers">
+                        <thead>
+                        <tr class="sortable ">
+                            <th class="table-id" st-sort="id" st-sort-default="true">#</th>
+                            <th st-sort="username">Username</th>
+                            <th st-sort="firstName">First Name</th>
+                            <th st-sort="lastName">Last Name</th>
+                            <th st-sort="email">Email</th>
+                            <th st-sort="age">Age</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th><input st-search="username" placeholder="Search Username"
+                                       class="input-sm form-control search-input"
+                                       type="search"/></th>
+                            <th><input st-search="firstName" placeholder="Search First Name"
+                                       class="input-sm form-control search-input"
+                                       type="search"/></th>
+                            <th><input st-search="lastName" placeholder="Search Last Name"
+                                       class="input-sm form-control search-input"
+                                       type="search"/></th>
+                            <th><input st-search="email" placeholder="Search Email"
+                                       class="input-sm form-control search-input" type="search"/>
+                            </th>
+                            <th><input st-search="age" placeholder="Search Age"
+                                       class="input-sm form-control search-input" type="search"/>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in allUsers">
+                            <td class="table-id">{{$index+1}}</td>
+                            <!--<td >-->
+                                <!--<div class="al-user-profile">-->
+                                <!--<img src="{{ item.imageSrc }}" >-->
+                                <!--</div>-->
+                            <!--</td>-->
+                            <td>{{item.username}}</td>
+                            <td>{{item.firstName}}</td>
+                            <td>{{item.lastName}}</td>
+                            <td><a class="email-link" ng-href="mailto:{{item.email}}">{{item.email}}</a>
+                            </td>
+                            <td>{{item.age}}</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td colspan="6" class="text-center">
+                                <div st-pagination="" st-items-by-page="tablePageSize"
+                                     st-displayed-pages="5"></div>
+                            </td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
 
-<h2 ng-repeat="user in users">{{user.firstName}}</h2>
+            </div>
+        </div>
+    </div>
+</div>
