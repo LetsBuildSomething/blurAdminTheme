@@ -21,7 +21,7 @@
     'BlurAdmin.pages.userProfile',
 
     // Import newsArticle module
-    //'BlurAdmin.pages.newsArticle',
+    'BlurAdmin.pages.newsArticle',
   ])
       .config(routeConfig);
 
