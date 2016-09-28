@@ -17,9 +17,9 @@
                 },
             })
             .state('viewArticle', {
-                url: '/article/:userID',
-                templateUrl: 'app/pages/userProfile/user.html',
-                controller: 'userController',
+                url: '/article/:articleID',
+                templateUrl: 'app/pages/newsArticle/newsArticle.html',
+                controller: 'newsArticleController',
                 title: 'View Article',
                 sidebarMeta: {
                     order: 1300,

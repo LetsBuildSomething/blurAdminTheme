@@ -22,6 +22,8 @@
 
     // Import newsArticle module
     'BlurAdmin.pages.newsArticle',
+
+    'commonServices',
   ])
       .config(routeConfig);
 
