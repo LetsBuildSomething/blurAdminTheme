@@ -9,9 +9,6 @@
             console.log(url);
             return 200;
         }
-
-
+        
       });
-
-
 })();
